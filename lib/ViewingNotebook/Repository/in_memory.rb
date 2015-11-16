@@ -1,25 +1,25 @@
 module ViewingNotebook
-  module NotesRepository
+  module Repository
     class InMemory
       def initialize
         @tasks = {}
         @id = 0
       end
 
-      def persist(task)
+      def persist(viewing)
         @id += 1
-        task.id = @id
-        tasks[@id] = task
-        task
+        viewing.id = @id
+        viewings[@id] = viewing
+        viewing
       end
 
       def count
-        tasks.length
+        viewings.length
       end
 
       private
 
-      attr_reader :tasks
+      attr_reader :viewings
     end
   end
 end

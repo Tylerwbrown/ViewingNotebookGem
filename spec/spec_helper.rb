@@ -1,1 +1,1 @@
-require 'ViewingNotebook/UseCases/add_note'
+require 'ViewingNotebook/UseCases/add_viewing'

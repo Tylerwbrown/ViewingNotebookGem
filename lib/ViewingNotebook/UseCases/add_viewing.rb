@@ -1,8 +1,8 @@
 module ViewingNotebook
   module UseCases
-    class AddNote
+    class AddViewing
       def self.add(title)
-        task = Entities::Note.new(title: title)
+        task = Entities::Viewing.new(title: title)
 
         if task.valid?
           ViewingNotebook.repo.persist(task)

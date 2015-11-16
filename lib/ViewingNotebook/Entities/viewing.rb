@@ -1,6 +1,6 @@
 module ViewingNotebook
   module Entities
-    class Note
+    class Viewing
       attr_accessor :id
       attr_reader :title
 

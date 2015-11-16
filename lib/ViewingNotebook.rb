@@ -12,8 +12,8 @@ module ViewingNotebook
       @repo ||= TasksRepository::InMemory.new
     end
 
-    def add_task(title)
-      UseCases::AddNote.add(title)
+    def add_viewing(title)
+      UseCases::AddViewing.add(title)
     end
   end
 end
