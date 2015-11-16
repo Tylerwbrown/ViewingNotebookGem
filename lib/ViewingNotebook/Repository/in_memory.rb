@@ -1,6 +1,6 @@
 class InMemory
   def initialize
-    @tasks = {}
+    @viewings = {}
     @id = 0
   end
 
