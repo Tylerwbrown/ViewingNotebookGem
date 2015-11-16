@@ -9,7 +9,7 @@ module ViewingNotebook
     end
 
     def repo
-      @repo ||= TasksRepository::InMemory.new
+      @repo ||= Repository::InMemory.new
     end
 
     def add_viewing(title)
