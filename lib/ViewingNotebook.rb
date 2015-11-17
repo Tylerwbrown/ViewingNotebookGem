@@ -32,5 +32,9 @@ module ViewingNotebook
     def add_note_to_viewing(note, index_of_viewing)
       UseCases::AddNoteToViewing.perform(note, index_of_viewing)
     end
+
+    def add_note_to_viewing_by_viewing(note, viewing)
+      UseCases::AddNoteToViewing.perform_with_viewing(note, viewing)
+    end
   end
 end

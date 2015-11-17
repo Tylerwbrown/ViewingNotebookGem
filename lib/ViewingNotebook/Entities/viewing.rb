@@ -6,12 +6,14 @@ module ViewingNotebook
 
       def initialize(title: '')
         @title = title
-        @notes = {}
-        @images = {}
+        @notes = []
+        @images = []
       end
 
       def add_note(note)
-        @notes << note
+        if (!note.empty?)
+          @notes << note
+        end
       end
 
       def add_image(image)
