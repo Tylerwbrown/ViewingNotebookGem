@@ -24,6 +24,14 @@ To interface with the gem, use "ViewingNotebook.(method_call)" to access impleme
 Adding a note:
 ViewingNotebook.add_viewing('Address goes here')
 
+Also, if you're going to try to persist this ViewingNotebook in a database, make sure to mimic the interface of the in_memory repository.
+
+To change the repository from the in_memory repository used in this gem to say, ActiveRecord, add the following code to your application.
+
+ViewingNoteBook.configure do |config|
+  config.repo = NameOfYourRepository::ActiveRecord
+end
+
 
 ## Development
 
