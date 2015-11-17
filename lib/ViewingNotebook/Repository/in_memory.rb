@@ -1,6 +1,8 @@
 module ViewingNotebook
   module Repository
     class InMemory
+      attr_reader :viewings
+      
       def initialize
         @viewings = {}
         @id = 0
@@ -17,9 +19,6 @@ module ViewingNotebook
         viewings.length
       end
 
-      private
-
-      attr_reader :viewings
     end
   end
 end

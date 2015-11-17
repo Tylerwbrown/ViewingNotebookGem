@@ -1,7 +1,8 @@
 module ViewingNotebook
   module UseCases
     class AddViewing
-      def self.add(title)
+      
+      def self.perform(title)
         viewing = Entities::Viewing.new(title: title)
 
         if viewing.valid?
@@ -10,6 +11,7 @@ module ViewingNotebook
           false
         end
       end
+
     end
   end
 end
