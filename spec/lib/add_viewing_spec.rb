@@ -5,7 +5,7 @@ describe ViewingNotebook do
     let(:repo) { ViewingNotebook.repo }
 
     it 'adds a new viewing' do
-      expect { ViewingNotebook.add_viewing('speak @ Guru-SP') }.
+      expect { ViewingNotebook.add_viewing('Hello.') }.
 					to change{ repo.count }.by(1)
     end
 

@@ -1,8 +1,6 @@
 # ViewingNotebook
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ViewingNotebook`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem allows you to create viewings in a notebook, and store notes && images in those viewings.
 
 ## Installation
 
@@ -21,9 +19,11 @@ Or install it yourself as:
     $ gem install ViewingNotebook
 
 ## Usage
-Adding a note:
+To interface with the gem, use "ViewingNotebook.(method_call)" to access implemented functionality. It is strongly suggested that you communicate with the app purely through the methods defined in ViewingNotebook.rb. An example is provided below.
 
-ViewingNotebook.add_note('Address goes here')
+Adding a note:
+ViewingNotebook.add_viewing('Address goes here')
+
 
 ## Development
 

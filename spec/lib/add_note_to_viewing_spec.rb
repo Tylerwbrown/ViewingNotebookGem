@@ -9,7 +9,7 @@ describe ViewingNotebook do
     let(:repo) { ViewingNotebook.repo }
 
     it 'adds a new note to viewing' do
-      expect { ViewingNotebook.add_note_to_viewing_by_viewing('speak @ Guru-SP', @viewing) }.
+      expect { ViewingNotebook.add_note_to_viewing_by_viewing('I am a man.', @viewing) }.
 					to change{ @viewing.notes.size }.by(1)
     end
 
